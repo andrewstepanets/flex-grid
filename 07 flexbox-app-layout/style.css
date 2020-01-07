@@ -1,0 +1,136 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a.button {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+}
+a.button:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.app-wrap {
+  max-width: 540px;
+  height: 90vh;
+  margin: 5vh auto;
+  border: 10px solid rgba(0, 0, 0, 0.8);
+  border-bottom-width: 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  padding: 20px;
+  background: white;
+  box-shadow: inset 0 5px 0 rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+.content img {
+  max-width: 50%;
+  float: left;
+  margin-right: 10px;
+}
+.icon-bar {
+  border-top: 1px solid #e6e6e6;
+}
+
+.icon-bar a {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgb(66, 198, 238);
+  color: rgba(0, 0, 0, 0.5);
+}
+.icon-bar a:first-child {
+  border-left: 0;
+}
+.icon-bar a:hover {
+  background: rgba(66, 198, 238, 0.8);
+  transition: all 0.3s;
+}
+
+.icon-bar i {
+  display: block;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+}
+.app-header {
+  background: #33a5e7;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+/* Header */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Content Section */
+
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Icon bar */
+
+.icon-bar {
+  display: flex;
+}
+.icon-bar a {
+  flex: 1;
+}
+
+/* Main White Button */
+
+.main-button {
+  position: absolute;
+  left: 50%;
+  bottom: 9%;
+  z-index: 2;
+}
+
+.main-button span {
+  display: block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: white;
+}
